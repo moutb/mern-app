@@ -1,0 +1,30 @@
+.TableCenter {
+  overflow: auto;
+  display: block;
+  max-height: 80vh;
+
+  td,
+  th {
+    text-align: center;
+  }
+
+  ul.actions-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .actions-list {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > * {
+      cursor: pointer;
+      font-size: 1.5rem;
+
+      &:not(:first-child) {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
